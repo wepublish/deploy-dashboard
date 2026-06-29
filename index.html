@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>wepublish · deployments</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      :root { font-family: ui-sans-serif, system-ui, -apple-system, sans-serif; color-scheme: light dark; }
+      body { margin: 0; padding: 1.5rem; background: Canvas; color: CanvasText; }
+      h1 { font-size: 1.25rem; margin: 0 0 1.5rem; }
+      .grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
+      .card { border: 1px solid color-mix(in oklab, CanvasText 18%, transparent); border-radius: 8px; padding: 1rem; display: grid; gap: 0.35rem; background: color-mix(in oklab, Canvas 97%, CanvasText 3%); }
+      .card header { display: flex; align-items: baseline; justify-content: space-between; }
+      .card h2 { font-size: 1rem; margin: 0; font-weight: 600; }
+      .state { font-size: 1.05rem; line-height: 1; }
+      .ok .state { color: #16a34a; }
+      .fail .state { color: #dc2626; }
+      .pending .state { color: #d97706; }
+      .ref { font-size: 0.85rem; opacity: 0.8; text-decoration: none; }
+      .branch { font-size: 0.8rem; opacity: 0.7; text-decoration: none; font-family: ui-monospace, monospace; }
+      .sha { font-family: ui-monospace, monospace; font-size: 0.85rem; text-decoration: none; opacity: 0.9; }
+      .sha code { background: color-mix(in oklab, Canvas 86%, CanvasText 14%); padding: 0.05rem 0.4rem; border-radius: 4px; }
+      .msg { font-size: 0.9rem; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; opacity: 0.9; }
+      .card footer { display: flex; gap: 0.35rem; font-size: 0.8rem; opacity: 0.75; margin-top: 0.25rem; }
+      .empty { opacity: 0.75; font-size: 0.95rem; }
+      .meta { color: color-mix(in oklab, CanvasText 55%, transparent); font-size: 0.8rem; margin-top: 1.5rem; }
+      a { color: inherit; }
+    </style>
+  </head>
+  <body>
+    <h1>wepublish · production deployments</h1>
+    <section class="grid">
+      <article class="card ok">
+        <header>
+          <h2>eenews</h2>
+          <span class="state" aria-label="success">✓</span>
+        </header>
+        <a class="ref" href="https://github.com/wepublish/wepublish/actions/runs/28245056950">deploy_eenews_202606261637</a>
+        <a class="branch" href="https://github.com/wepublish/wepublish/tree/ee-news-v3" title="branch this deploy was cut from">⎇ ee-news-v3</a>
+        <a class="sha" href="https://github.com/wepublish/wepublish/commit/65197f438a8d8caa48eb49699f508505a8d3c223"><code>65197f4</code></a>
+        <div class="msg">Merge remote-tracking branch 'origin/master' into ee-news-v3</div>
+        <footer>
+          <time datetime="2026-06-26T14:38:32Z">2d ago</time>
+          <span class="by">· dsheyp</span>
+        </footer>
+      </article>
+      <article class="card ok">
+        <header>
+          <h2>hauptstadt</h2>
+          <span class="state" aria-label="success">✓</span>
+        </header>
+        <a class="ref" href="https://github.com/wepublish/wepublish/actions/runs/28166241328">deploy_hauptstadt_202606251315</a>
+        <a class="branch" href="https://github.com/wepublish/wepublish/tree/f%2Fhauptstadt-master-deployment" title="branch this deploy was cut from">⎇ f/hauptstadt-master-deployment</a>
+        <a class="sha" href="https://github.com/wepublish/wepublish/commit/23c0fbc85481a79a66447de173ee329d16179e6d"><code>23c0fbc</code></a>
+        <div class="msg">feat(hauptstadt): password login by default</div>
+        <footer>
+          <time datetime="2026-06-25T11:16:05Z">3d ago</time>
+          <span class="by">· Itrulia</span>
+        </footer>
+      </article>
+      <article class="card ok">
+        <header>
+          <h2>wepublish-site</h2>
+          <span class="state" aria-label="success">✓</span>
+        </header>
+        <a class="ref" href="https://github.com/wepublish/wepublish/actions/runs/27742547046">deploy_wepublish-site_202606180901</a>
+        <a class="sha" href="https://github.com/wepublish/wepublish/commit/c7f966c02d50636e030d484fd64ab1ee2e174695"><code>c7f966c</code></a>
+        <div class="msg">Deploy production</div>
+        <footer>
+          <time datetime="2026-06-18T07:01:11Z">11d ago</time>
+          <span class="by">· Itrulia</span>
+        </footer>
+      </article>
+      <article class="card ok">
+        <header>
+          <h2>zwoelf</h2>
+          <span class="state" aria-label="success">✓</span>
+        </header>
+        <a class="ref" href="https://github.com/wepublish/wepublish/actions/runs/27693021907">deploy_zwoelf_202606171536</a>
+        <a class="sha" href="https://github.com/wepublish/wepublish/commit/515bbc4e52fc39650692185ac91645a9aeae2fcc"><code>515bbc4</code></a>
+        <div class="msg">fix(website): paywall missing id which causes bugs with apollo cache …</div>
+        <footer>
+          <time datetime="2026-06-17T13:36:52Z">11d ago</time>
+          <span class="by">· dsheyp</span>
+        </footer>
+      </article>
+      <article class="card ok">
+        <header>
+          <h2>mediamakerscamp</h2>
+          <span class="state" aria-label="success">✓</span>
+        </header>
+        <a class="ref" href="https://github.com/wepublish/wepublish/actions/runs/27690494655">deploy_mediamakerscamp_202606171455</a>
+        <a class="sha" href="https://github.com/wepublish/wepublish/commit/c7f966c02d50636e030d484fd64ab1ee2e174695"><code>c7f966c</code></a>
+        <div class="msg">Deploy production</div>
+        <footer>
+          <time datetime="2026-06-17T12:55:32Z">11d ago</time>
+          <span class="by">· Itrulia</span>
+        </footer>
+      </article>
+      <article class="card ok">
+        <header>
+          <h2>factuel</h2>
+          <span class="state" aria-label="success">✓</span>
+        </header>
+        <a class="ref" href="https://github.com/wepublish/wepublish/actions/runs/27689929878">deploy_factuel_202606171445</a>
+        <a class="sha" href="https://github.com/wepublish/wepublish/commit/c7f966c02d50636e030d484fd64ab1ee2e174695"><code>c7f966c</code></a>
+        <div class="msg">Deploy production</div>
+        <footer>
+          <time datetime="2026-06-17T12:45:53Z">11d ago</time>
+          <span class="by">· Itrulia</span>
+        </footer>
+      </article>
+      <article class="card ok">
+        <header>
+          <h2>bajour</h2>
+          <span class="state" aria-label="success">✓</span>
+        </header>
+        <a class="ref" href="https://github.com/wepublish/wepublish/actions/runs/27356434993">deploy_bajour_202606111703</a>
+        <a class="sha" href="https://github.com/wepublish/wepublish/commit/1796e09f082049c151fcd044a3d028be96f70d8d"><code>1796e09</code></a>
+        <div class="msg">fix(website): fix iframe-block and client/server date/time mismatch h…</div>
+        <footer>
+          <time datetime="2026-06-11T15:03:41Z">17d ago</time>
+          <span class="by">· dsheyp</span>
+        </footer>
+      </article>
+      <article class="card ok">
+        <header>
+          <h2>reflekt</h2>
+          <span class="state" aria-label="success">✓</span>
+        </header>
+        <a class="ref" href="https://github.com/wepublish/wepublish/actions/runs/27332037106">deploy_reflekt_202606110947</a>
+        <a class="sha" href="https://github.com/wepublish/wepublish/commit/d5e3959b9a420f9b84c3c41b6bc47f2f61cd9c0b"><code>d5e3959</code></a>
+        <div class="msg">Merge remote-tracking branch 'origin/master' into REF-11-frontend-des…</div>
+        <footer>
+          <time datetime="2026-06-11T07:48:11Z">17d ago</time>
+          <span class="by">· dsheyp</span>
+        </footer>
+      </article>
+      <article class="card ok">
+        <header>
+          <h2>cultur</h2>
+          <span class="state" aria-label="success">✓</span>
+        </header>
+        <a class="ref" href="https://github.com/wepublish/wepublish/actions/runs/27295472499">deploy_cultur_202606101955</a>
+        <a class="sha" href="https://github.com/wepublish/wepublish/commit/98655908c8be03ced5abac16a1570674e081386d"><code>9865590</code></a>
+        <div class="msg">fix(tsri): bring back linked teasers being clickable on their full ar…</div>
+        <footer>
+          <time datetime="2026-06-10T17:56:02Z">18d ago</time>
+          <span class="by">· dsheyp</span>
+        </footer>
+      </article>
+      <article class="card ok">
+        <header>
+          <h2>tsri</h2>
+          <span class="state" aria-label="success">✓</span>
+        </header>
+        <a class="ref" href="https://github.com/wepublish/wepublish/actions/runs/27287075856">deploy_tsri_202606101728</a>
+        <a class="sha" href="https://github.com/wepublish/wepublish/commit/4e1a5acd8d61983dc248c6bfbfba87005de05f08"><code>4e1a5ac</code></a>
+        <div class="msg">Deploy production</div>
+        <footer>
+          <time datetime="2026-06-10T15:29:10Z">18d ago</time>
+          <span class="by">· dsheyp</span>
+        </footer>
+      </article>
+      <article class="card ok">
+        <header>
+          <h2>munotgloeggli</h2>
+          <span class="state" aria-label="success">✓</span>
+        </header>
+        <a class="ref" href="https://github.com/wepublish/wepublish/actions/runs/27209483416">deploy_munotgloeggli_202606091527</a>
+        <a class="sha" href="https://github.com/wepublish/wepublish/commit/4a63e5cef1713defff4c79b36dd76dd7b316abae"><code>4a63e5c</code></a>
+        <div class="msg">Deploy production</div>
+        <footer>
+          <time datetime="2026-06-09T13:28:07Z">19d ago</time>
+          <span class="by">· LukasSkywalker</span>
+        </footer>
+      </article>
+      <article class="card ok">
+        <header>
+          <h2>ganzgraz</h2>
+          <span class="state" aria-label="success">✓</span>
+        </header>
+        <a class="ref" href="https://github.com/wepublish/wepublish/actions/runs/27164514761">deploy_ganzgraz_202606082220</a>
+        <a class="branch" href="https://github.com/wepublish/wepublish/tree/f%2Fganzgraz-improvements" title="branch this deploy was cut from">⎇ f/ganzgraz-improvements</a>
+        <a class="sha" href="https://github.com/wepublish/wepublish/commit/c0167c4d849dc4e4a1057ff0ce8ce07741e8d589"><code>c0167c4</code></a>
+        <div class="msg">refactor(ganzgraz): design changes</div>
+        <footer>
+          <time datetime="2026-06-08T20:20:17Z">20d ago</time>
+          <span class="by">· Itrulia</span>
+        </footer>
+      </article>
+      <article class="card ok">
+        <header>
+          <h2>gruppetto</h2>
+          <span class="state" aria-label="success">✓</span>
+        </header>
+        <a class="ref" href="https://github.com/wepublish/wepublish/actions/runs/26809377077">deploy_gruppetto_202606021056</a>
+        <a class="sha" href="https://github.com/wepublish/wepublish/commit/5d8e9af7e986ebcde5f88a30fa2ae398d204be75"><code>5d8e9af</code></a>
+        <div class="msg">Merge pull request #2751 from wepublish/b/no-focalpoint-peer</div>
+        <footer>
+          <time datetime="2026-06-02T08:56:17Z">26d ago</time>
+          <span class="by">· Itrulia</span>
+        </footer>
+      </article>
+      <article class="card ok">
+        <header>
+          <h2>fazetten</h2>
+          <span class="state" aria-label="success">✓</span>
+        </header>
+        <a class="ref" href="https://github.com/wepublish/wepublish/actions/runs/26572619614">deploy_fazetten_202605281344</a>
+        <a class="sha" href="https://github.com/wepublish/wepublish/commit/457826b70d1592ceff296df9a76fb6554e81cb69"><code>457826b</code></a>
+        <div class="msg">refactor(eenews, fazetten): mitmachen button changes</div>
+        <footer>
+          <time datetime="2026-05-28T11:44:25Z">31d ago</time>
+          <span class="by">· Itrulia</span>
+        </footer>
+      </article>
+      <article class="card ok">
+        <header>
+          <h2>wnti</h2>
+          <span class="state" aria-label="success">✓</span>
+        </header>
+        <a class="ref" href="https://github.com/wepublish/wepublish/actions/runs/26570645648">deploy_wnti_202605281259</a>
+        <a class="sha" href="https://github.com/wepublish/wepublish/commit/8d47d18616cb07a0ba9e6d935e3e3da9b749e914"><code>8d47d18</code></a>
+        <div class="msg">fix(api): peer sometimes not having focalpoint</div>
+        <footer>
+          <time datetime="2026-05-28T10:59:57Z">31d ago</time>
+          <span class="by">· Itrulia</span>
+        </footer>
+      </article>
+      <article class="card ok">
+        <header>
+          <h2>mannschaft</h2>
+          <span class="state" aria-label="success">✓</span>
+        </header>
+        <a class="ref" href="https://github.com/wepublish/wepublish/actions/runs/26292278458">deploy_mannschaft_202605221601</a>
+        <a class="branch" href="https://github.com/wepublish/wepublish/tree/b%2Ftwitter-changed-dataformat" title="branch this deploy was cut from">⎇ b/twitter-changed-dataformat</a>
+        <a class="sha" href="https://github.com/wepublish/wepublish/commit/59b0e1331d40caf776274ebd39744a5a55d2e838"><code>59b0e13</code></a>
+        <div class="msg">fix(website): twitter changed data format from empty array to null wh…</div>
+        <footer>
+          <time datetime="2026-05-22T14:01:16Z">37d ago</time>
+          <span class="by">· Itrulia</span>
+        </footer>
+      </article>
+      <article class="card ok">
+        <header>
+          <h2>bka</h2>
+          <span class="state" aria-label="success">✓</span>
+        </header>
+        <a class="ref" href="https://github.com/wepublish/wepublish/actions/runs/24726298695">deploy_bka_202604211552</a>
+        <a class="branch" href="https://github.com/wepublish/wepublish/tree/bka-deployment-2" title="branch this deploy was cut from">⎇ bka-deployment-2</a>
+        <a class="sha" href="https://github.com/wepublish/wepublish/commit/e08fe9ebc6661575b20eb1ba9566a8d14ce3b634"><code>e08fe9e</code></a>
+        <div class="msg">Staging Deployment CW17</div>
+        <footer>
+          <time datetime="2026-04-21T13:53:22Z">68d ago</time>
+          <span class="by">· elias-summermatter</span>
+        </footer>
+      </article>
+      <article class="card ok">
+        <header>
+          <h2>onlinereports</h2>
+          <span class="state" aria-label="success">✓</span>
+        </header>
+        <a class="ref" href="https://github.com/wepublish/wepublish/actions/runs/24726180962">deploy_onlinereports_202604211550</a>
+        <a class="branch" href="https://github.com/wepublish/wepublish/tree/bka-deployment-2" title="branch this deploy was cut from">⎇ bka-deployment-2</a>
+        <a class="sha" href="https://github.com/wepublish/wepublish/commit/e08fe9ebc6661575b20eb1ba9566a8d14ce3b634"><code>e08fe9e</code></a>
+        <div class="msg">Staging Deployment CW17</div>
+        <footer>
+          <time datetime="2026-04-21T13:50:58Z">68d ago</time>
+          <span class="by">· elias-summermatter</span>
+        </footer>
+      </article>
+      <article class="card ok">
+        <header>
+          <h2>flimmer</h2>
+          <span class="state" aria-label="success">✓</span>
+        </header>
+        <a class="ref" href="https://github.com/wepublish/wepublish/actions/runs/24723884108">deploy_flimmer_202604211502</a>
+        <a class="branch" href="https://github.com/wepublish/wepublish/tree/bka-deployment-2" title="branch this deploy was cut from">⎇ bka-deployment-2</a>
+        <a class="sha" href="https://github.com/wepublish/wepublish/commit/e08fe9ebc6661575b20eb1ba9566a8d14ce3b634"><code>e08fe9e</code></a>
+        <div class="msg">Staging Deployment CW17</div>
+        <footer>
+          <time datetime="2026-04-21T13:03:16Z">68d ago</time>
+          <span class="by">· elias-summermatter</span>
+        </footer>
+      </article>
+      <article class="card fail">
+        <header>
+          <h2>wepublish</h2>
+          <span class="state" aria-label="failure">✕</span>
+        </header>
+        <a class="ref" href="https://github.com/wepublish/wepublish/actions/runs/16627754525">deploy_wepublish_202507301805</a>
+        <a class="sha" href="https://github.com/wepublish/wepublish/commit/8d3fbf4eada9abab6a90fb2aeb7edcc4186014c8"><code>8d3fbf4</code></a>
+        <div class="msg">url</div>
+        <footer>
+          <time datetime="2025-07-30T16:05:29Z">333d ago</time>
+          <span class="by">· elias-summermatter</span>
+        </footer>
+      </article>
+      <article class="card fail">
+        <header>
+          <h2>we-publish</h2>
+          <span class="state" aria-label="failure">✕</span>
+        </header>
+        <a class="ref" href="https://github.com/wepublish/wepublish/actions/runs/16627383968">deploy_we-publish_202507301749</a>
+        <a class="sha" href="https://github.com/wepublish/wepublish/commit/ee470a59a93f24a36d16cda48d69d38bf1fc6346"><code>ee470a5</code></a>
+        <div class="msg">Enable we-publish deployment to ensure working infra</div>
+        <footer>
+          <time datetime="2025-07-30T15:49:35Z">333d ago</time>
+          <span class="by">· elias-summermatter</span>
+        </footer>
+      </article>
+      <article class="card ok">
+        <header>
+          <h2>website-example</h2>
+          <span class="state" aria-label="success">✓</span>
+        </header>
+        <a class="ref" href="https://github.com/wepublish/wepublish/actions/runs/15927125519">deploy_website-example_202506271511</a>
+        <a class="sha" href="https://github.com/wepublish/wepublish/commit/a535d315b563fde6f0175d5aa6f7f965ebe119e9"><code>a535d31</code></a>
+        <div class="msg">Deploy production</div>
+        <footer>
+          <time datetime="2025-06-27T13:11:38Z">366d ago</time>
+          <span class="by">· LukasSkywalker</span>
+        </footer>
+      </article>
+    </section>
+    <p class="meta">Last refreshed <time datetime="2026-06-29T07:32:14.464Z">Mon, 29 Jun 2026 07:32:14 GMT</time> · <a href="https://github.com/wepublish/wepublish/actions/workflows/on-tag-deploy-production.yml">All production deploys on GitHub</a></p>
+    <script id="deploy-branch-store" type="application/json">{"deploy_zwoelf_202606171536":null,"deploy_cultur_202606101955":null,"deploy_eenews_202606261637":"ee-news-v3","deploy_reflekt_202606110947":null,"deploy_factuel_202606171445":null,"deploy_munotgloeggli_202606091527":null,"deploy_gruppetto_202606021056":null,"deploy_wnti_202605281259":null,"deploy_tsri_202606101728":null,"deploy_bajour_202606111703":null,"deploy_mannschaft_202605221601":"b/twitter-changed-dataformat","deploy_fazetten_202605281344":null,"deploy_website-example_202506271511":null,"deploy_we-publish_202507301749":null,"deploy_mediamakerscamp_202606171455":null,"deploy_onlinereports_202604211550":"bka-deployment-2","deploy_wepublish_202507301805":null,"deploy_bka_202604211552":"bka-deployment-2","deploy_ganzgraz_202606082220":"f/ganzgraz-improvements","deploy_wepublish-site_202606180901":null,"deploy_flimmer_202604211502":"bka-deployment-2","deploy_hauptstadt_202606251315":"f/hauptstadt-master-deployment"}</script>
+  </body>
+</html>
